@@ -6,12 +6,16 @@
 //
 
 import UIKit
+import CLTypingLabel
 
 class WelcomeViewController: UIViewController {
 
+    @IBOutlet weak var myTypeWriterLabel: CLTypingLabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        myTypeWriterLabel.text = "🔥FireChat"
     }
 
 

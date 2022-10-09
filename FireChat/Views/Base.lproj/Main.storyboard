@@ -69,8 +69,8 @@
                                     <segue destination="9NC-8s-HdB" kind="show" id="1sB-ig-tlW"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🔥FireChat" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CV8-WO-S6c" userLabel="Title Label">
-                                <rect key="frame" x="68.333333333333343" y="430.33333333333331" width="293.33333333333326" height="71.666666666666686"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🔥FireChat" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CV8-WO-S6c" userLabel="Title Label" customClass="CLTypingLabel" customModule="CLTypingLabel">
+                                <rect key="frame" x="215" y="466" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="60"/>
                                 <color key="textColor" systemColor="systemGrayColor"/>
                                 <nil key="highlightedColor"/>
@@ -90,6 +90,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7bj-dG-202"/>
+                    <connections>
+                        <outlet property="myTypeWriterLabel" destination="CV8-WO-S6c" id="RE5-15-736"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -359,6 +362,9 @@
             <point key="canvasLocation" x="1604.6511627906978" y="-28.326180257510732"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="CV8-WO-S6c"/>
+    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="6mY-Ex-EBL"/>
     </inferredMetricsTieBreakers>
