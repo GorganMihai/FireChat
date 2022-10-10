@@ -146,7 +146,7 @@
                                         </constraints>
                                         <color key="textColor" name="BrandBlue"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -166,6 +166,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Register">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="registerPressed:" destination="fYh-7B-MlW" eventType="touchUpInside" id="UxG-9P-oPh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2OA-uD-j2g"/>
@@ -185,6 +188,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="VI1-8z-m9l"/>
                     <connections>
+                        <outlet property="emailTextfield" destination="STc-1O-bfp" id="sjC-An-wjn"/>
+                        <outlet property="passwordTextfield" destination="aGw-8R-1FR" id="s7d-8P-aJ7"/>
                         <segue destination="hwB-B3-kMn" kind="show" identifier="FromRegisterToChat" id="Uu7-0Q-ody"/>
                     </connections>
                 </viewController>
@@ -225,8 +230,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VZY-Zr-Po4" userLabel="TextView">
                                 <rect key="frame" x="0.0" y="103" width="430" height="175"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7NW-id-fEX" userLabel="Email Textfield">
-                                        <rect key="frame" x="186" y="50" width="58.333333333333343" height="40"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="user1@gmail.com" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7NW-id-fEX" userLabel="Email Textfield">
+                                        <rect key="frame" x="119.66666666666669" y="50" width="191" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="DXd-V7-CZW"/>
                                         </constraints>
@@ -234,14 +239,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ACk-kv-z3K" userLabel="Password Textfield">
-                                        <rect key="frame" x="163" y="130" width="104" height="40"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ACk-kv-z3K" userLabel="Password Textfield">
+                                        <rect key="frame" x="171" y="130" width="88.333333333333314" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="AUu-7i-Qhm"/>
                                         </constraints>
                                         <color key="textColor" name="BrandBlue"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -261,9 +266,12 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Register">
+                                <buttonConfiguration key="configuration" style="plain" title="Log In">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginPressed:" destination="9NC-8s-HdB" eventType="touchUpInside" id="5xo-to-QXS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lCH-7Z-QNC"/>
@@ -282,6 +290,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="gyL-vq-BKY"/>
                     <connections>
+                        <outlet property="emailTextfield" destination="7NW-id-fEX" id="vxS-61-9g3"/>
+                        <outlet property="passwordTextfield" destination="ACk-kv-z3K" id="skC-CT-PDe"/>
                         <segue destination="hwB-B3-kMn" kind="show" identifier="FromLogInToChat" id="6mY-Ex-EBL"/>
                     </connections>
                 </viewController>
@@ -300,9 +310,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mhy-XY-C7a">
                                 <rect key="frame" x="0.0" y="103" width="430" height="735"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="735" id="i8b-vn-m6S"/>
-                                </constraints>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9J-SP-I1Q">
                                 <rect key="frame" x="0.0" y="838" width="430" height="60"/>
@@ -326,6 +333,9 @@
                                         </constraints>
                                         <color key="tintColor" name="BrandLightPurple"/>
                                         <state key="normal" image="paperplane.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="sendPressed:" destination="hwB-B3-kMn" eventType="touchUpInside" id="YLu-2S-il7"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" name="BrandPurple"/>
@@ -346,16 +356,24 @@
                         <constraints>
                             <constraint firstItem="mhy-XY-C7a" firstAttribute="top" secondItem="htN-83-4yo" secondAttribute="top" id="Vd4-2s-L2X"/>
                             <constraint firstItem="Q9J-SP-I1Q" firstAttribute="top" secondItem="mhy-XY-C7a" secondAttribute="bottom" id="hrv-AM-WJm"/>
-                            <constraint firstItem="mhy-XY-C7a" firstAttribute="trailing" secondItem="Q9J-SP-I1Q" secondAttribute="trailing" id="j0i-dq-mS3"/>
+                            <constraint firstItem="mhy-XY-C7a" firstAttribute="trailing" secondItem="htN-83-4yo" secondAttribute="trailing" id="j0i-dq-mS3"/>
                             <constraint firstItem="Q9J-SP-I1Q" firstAttribute="trailing" secondItem="htN-83-4yo" secondAttribute="trailing" id="p2z-U1-ony"/>
                             <constraint firstItem="Q9J-SP-I1Q" firstAttribute="bottom" secondItem="htN-83-4yo" secondAttribute="bottom" id="rVI-xR-cgN"/>
                             <constraint firstItem="Q9J-SP-I1Q" firstAttribute="leading" secondItem="htN-83-4yo" secondAttribute="leading" id="wWE-oZ-QxK"/>
-                            <constraint firstItem="mhy-XY-C7a" firstAttribute="leading" secondItem="Q9J-SP-I1Q" secondAttribute="leading" id="wh2-C0-MCM"/>
+                            <constraint firstItem="mhy-XY-C7a" firstAttribute="leading" secondItem="htN-83-4yo" secondAttribute="leading" id="wh2-C0-MCM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="🔥FireChat" id="jPH-hm-p9N">
-                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="j5f-Sq-Q5b" userLabel="Log Out"/>
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="j5f-Sq-Q5b" userLabel="Log Out">
+                            <connections>
+                                <action selector="logOutPressed:" destination="hwB-B3-kMn" id="uwO-Ph-ro1"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="messageTextfield" destination="CGW-Pj-dDi" id="K2b-wX-0jl"/>
+                        <outlet property="tableView" destination="mhy-XY-C7a" id="e1r-VW-jPy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbD-eb-qc6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -6,4 +6,6 @@ target 'FireChat' do
   
   # Pods for FireChat
     pod 'CLTypingLabel'
+    
+    
 end
