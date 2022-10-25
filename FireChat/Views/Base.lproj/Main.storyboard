@@ -29,7 +29,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pHm-vI-acR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1260" y="-28"/>
+            <point key="canvasLocation" x="-840" y="-28"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -70,7 +70,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🔥FireChat" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CV8-WO-S6c" userLabel="Title Label" customClass="CLTypingLabel" customModule="CLTypingLabel">
-                                <rect key="frame" x="215" y="466" width="0.0" height="0.0"/>
+                                <rect key="frame" x="68.333333333333343" y="430.33333333333331" width="293.33333333333326" height="71.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="60"/>
                                 <color key="textColor" systemColor="systemGrayColor"/>
                                 <nil key="highlightedColor"/>
@@ -96,7 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-356" y="-28"/>
+            <point key="canvasLocation" x="-95" y="-28"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="GQk-xo-VaV">
@@ -195,7 +195,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HSK-VE-ivS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="667" y="-346"/>
+            <point key="canvasLocation" x="667" y="-336"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="ViB-Jf-ZKX">
@@ -297,7 +297,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RhV-Nn-y5d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="667" y="314"/>
+            <point key="canvasLocation" x="667" y="299"/>
         </scene>
         <!--🔥FireChat-->
         <scene sceneID="AMZ-G7-mX3">
@@ -377,14 +377,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbD-eb-qc6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1604.6511627906978" y="-28.326180257510732"/>
+            <point key="canvasLocation" x="1426" y="-28"/>
         </scene>
     </scenes>
     <designables>
-        <designable name="CV8-WO-S6c"/>
+        <designable name="CV8-WO-S6c">
+            <size key="intrinsicContentSize" width="293.33333333333331" height="71.666666666666671"/>
+        </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="6mY-Ex-EBL"/>
+        <segue reference="Uu7-0Q-ody"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="119"/>
