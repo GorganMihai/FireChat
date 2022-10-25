@@ -1,21 +1,25 @@
 IOS WeatherClone 
 ==========================
-This is an apple-like weather application that allows the users to see the weather in real time, at their location or elsewhere via search. This application integrates several elements that I have specified below
+This is a chat application based on Firebase which integrates elements from CocoaPods
 
 ## Screenshots
-<img src="./Img/Intro.gif" width = 350 > 
-<img src="./Img/All.png" width = 350 >
+
+<img src="./Img/All.png" width = 600 >
 
 ## Features
-* Ucccaaaaazzzzzzzz
-* Core Location
-* Work with APIs - HTTP request with URLSession
-* Parse JSON with the native JSONDecoder
-* Swift Protocol - Delegate Design Pattern  
-* MVC - Model View Controller
-* Dark-Mode
-* Custom UIView
-* UIStackView 
+* Firebase Firestore as a Cloud Database
+* Firebase Authentication
+* Cocoapods
+* Swift Package Manager
+* Custom UI with .xib files 
+* MVC
+* IOS Table Views
+* IOS Navigation Controller
+* UIKit 
+
+## CocoaPods
+* CLTypingLabel
+* IQKeyboardManagerSwift 
 
 ## How to build
 
@@ -25,8 +29,9 @@ This is an apple-like weather application that allows the users to see the weath
 https://github.com/GorganMihai/FireChat.git
 ```
 
-2) Add your OpenWeather API key
-<img src="./Img/ApiKey.png" height = 200 >
+2) Add all pods in description
+
+3) Add Firebase packages
 
 
 # Requirements 
