@@ -6,7 +6,7 @@ This is an apple-like weather application that allows the users to see the weath
 <img src="./Img/Day.png" width = 350 style="padding-right:35" > <img src="./Img/Night.png" width = 350 >
 
 ## Features
-* Swift - UIKit
+* Ucccaaaaazzzzzzzz
 * Core Location
 * Work with APIs - HTTP request with URLSession
 * Parse JSON with the native JSONDecoder
@@ -21,7 +21,7 @@ This is an apple-like weather application that allows the users to see the weath
 1) Clone the repository
 
 ```bash
-$ git clone https://github.com/GorganMihai/Weather.git
+https://github.com/GorganMihai/FireChat.git
 ```
 
 2) Add your OpenWeather API key
