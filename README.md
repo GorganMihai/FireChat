@@ -3,7 +3,8 @@ IOS WeatherClone
 This is an apple-like weather application that allows the users to see the weather in real time, at their location or elsewhere via search. This application integrates several elements that I have specified below
 
 ## Screenshots
-<img src="./Img/Day.png" width = 350 style="padding-right:35" > <img src="./Img/Night.png" width = 350 >
+<img src="./Img/Intro.gif" width = 350 > 
+<img src="./Img/All.png" width = 350 >
 
 ## Features
 * Ucccaaaaazzzzzzzz
