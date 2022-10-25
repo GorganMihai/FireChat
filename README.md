@@ -20,7 +20,8 @@ This is a chat application based on Firebase which integrates elements from Coco
 ## CocoaPods
 * CLTypingLabel
 * IQKeyboardManagerSwift 
-<img src="./Img/Intro.gif" width = 350 ><img src="./Img/Keyboard.gif" width = 350 >
+
+<img src="./Img/Intro.gif" width = 200 >  <img src="./Img/Keyboard.gif" width = 200 >
 
 
 ## How to build
